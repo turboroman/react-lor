@@ -1,0 +1,34 @@
+:root {
+  --dark-color: #1d1d1d;
+  --cream-color: #dfd8c8;
+  --white-color: #e4decd;
+  --soft-gold-color: #d1bfa7;
+  --padding-container: 0 80px;
+  --padding-top-container: 100px;
+}
+
+.App {
+  background-color: var(--cream-color);
+}
+
+
+@media (max-width: 1500px) {
+  :root {
+    --padding-container: 0 60px;
+    --padding-top-container: 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --padding-container: 0 40px;
+    --padding-top-container: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --padding-container: 0 20px;
+    --padding-top-container: 40px;
+  }
+}

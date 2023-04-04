@@ -1,0 +1,77 @@
+.bar {
+  display: none;
+  position: relative;
+  height: 28px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.bar span {
+  position: absolute;
+  top: 12px;
+  width: 30px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--dark-color);
+  transition: all .3s;
+}
+
+.bar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--dark-color);
+  transition: all .3s;
+}
+
+.bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--dark-color);
+  transition: all .3s;
+}
+
+
+/* ===== OPEN ====== */
+.active {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+}
+
+.active span {
+  margin-left: 100px;
+  transition: all .3s;
+}
+
+.active::after {
+  bottom: 46%;
+  width: 30px;
+  height: 3px;
+  background-color: var(--white-color);
+  transform: rotate(45deg);
+  transition: all .3s;
+}
+
+.active::before {
+  top: 43%;
+  width: 30px;
+  height: 3px;
+  background-color: var(--white-color);
+  transform: rotate(-45deg);
+  transition: all .3s;
+}
+
+@media screen and (max-width:500px) {
+  .bar {
+    display: block;
+  }
+}

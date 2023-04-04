@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Aniron";
+  src: url(./fonts/aniron.regular.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Aniron";
+  src: url(./fonts/aniron.bold.woff2);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Morris";
+  src: url(./fonts/morris-roman.black.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Aniron', 'Morris', 'Roboto', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+:focus {
+  outline: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

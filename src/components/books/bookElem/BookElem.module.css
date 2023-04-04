@@ -1,0 +1,59 @@
+.container {
+  padding: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  overflow: hidden;
+}
+
+.btn {
+  margin-top: auto;
+  margin-right: 30px;
+  padding: 20px;
+
+  font-family: 'Aniron';
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--dark-color);
+  background-color: var(--soft-gold-color);
+  border-radius: 15px;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.btn:hover {
+  background-color: var(--cream-color);
+}
+
+.btn:active {
+  border-color: var(--dark-color);
+}
+
+.list {
+  position: absolute;
+  top: -100%;
+  transition: top .8s;
+
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, .3);
+  border-radius: 20px;
+}
+
+.listOpened {
+  top: 50px;
+}
+
+.chapter {
+  font-size: 20px;
+  color: var(--dark-color);
+}

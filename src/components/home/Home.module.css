@@ -1,0 +1,45 @@
+.container {
+  padding: var(--padding-container);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: url('../../images/bg-home_5.jfif');
+  background-color: #190b01;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 50px;
+  color: var(--soft-gold-color);
+}
+
+.text {
+  padding-bottom: 50px;
+  font-size: 30px;
+  color: var(--soft-gold-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    margin-bottom: 10px;
+    font-size: 35px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+}
