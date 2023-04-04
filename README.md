@@ -1,4 +1,5 @@
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000] to view it in your browser.
+1. Go to terminal
+2. type: npm i
+3. type: npm start
+4. open [http://localhost:3000] in your browser.
+5. enjoy
